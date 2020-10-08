@@ -1,5 +1,8 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+// 这里是gradle脚本执行所需依赖，分别是对应的maven库和插件
 buildscript {
+    //引入扩展属性
+    apply from: './dependencies.gradle'
     ext.kotlin_version = "1.4.0"
     repositories {
         google()
@@ -7,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.1"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

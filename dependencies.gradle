@@ -1,0 +1,11 @@
+ext.versions = [
+        minSdk     : 21,
+        targetSdk  : 29,
+        versionCode: 5,
+        versionName: "1.5",
+
+        //Debug
+        timber     : "4.7.1",
+        //kotlin
+        kotlin     : "1.4.0"
+]
