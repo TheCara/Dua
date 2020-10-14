@@ -7,5 +7,8 @@ ext.versions = [
         //Debug
         timber     : "4.7.1",
         //kotlin
-        kotlin     : "1.4.0"
+        kotlin     : "1.4.0",
+
+        // Third Party 第三方依赖
+        koin       : "1.0.2"
 ]

@@ -3,7 +3,6 @@
 buildscript {
     //引入扩展属性
     apply from: './dependencies.gradle'
-    ext.kotlin_version = "1.4.0"
     repositories {
         google()
         jcenter()
